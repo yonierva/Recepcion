@@ -133,7 +133,7 @@ body {
 .info {
     padding: 60px 30%;
     text-align: center;
-    background-color: var(--light);
+    background-color: var(--background);
     color: var(--text);
 }
 
