@@ -235,8 +235,4 @@ footer {
     .galeria img {
         height: 200px;
     }
-
-    .galeria::before {
-        font-size: 1.5rem;
-    }
 }
