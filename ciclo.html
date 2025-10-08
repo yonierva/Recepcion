@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción</title>
+    <link rel="stylesheet" href="css/ciclo.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">Recepción</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="inicio.HTML" >Home</a></li>
+                <li><a href="fundamentos.html">Fundamentos</a></li>
+                <li><a href="#" class="active">El Ciclo</a></li>
+                <li><a href="#">Tecnologías</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>El Corazón Estratégico del Servicio</h1>
+            <p>Descubre la esencia de la recepción hotelera y su papel vital en la experiencia del huésped.</p>
+        </div>
+    </section>
+
+    <section id="ciclo-huesped" class="ciclo">
+        <h2>Ciclo de la Llegada del Huésped</h2>
+        <p>
+            El ciclo del huésped describe las etapas que recorre un cliente desde su reserva hasta su salida del hotel.
+            Cada una de estas fases es esencial para ofrecer una experiencia completa, eficiente y satisfactoria.
+        </p>
+
+        <div class="etapa">
+            <h3>1. Reserva o Prellegada</h3>
+            <p>
+                Se realiza antes de la llegada del huésped. Incluye la confirmación de la reserva, la recolección de
+                datos y la preparación de la habitación.
+                Es la oportunidad de anticiparse a sus necesidades.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <h3>2. Llegada (Check-In)</h3>
+            <p>
+                Es la primera interacción directa con el huésped. En esta fase se da la bienvenida, se confirma la
+                reserva y se realiza el registro correspondiente.
+                La atención debe ser amable y eficiente para causar una buena impresión.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <h3>3. Estancia</h3>
+            <p>
+                Durante su permanencia, el huésped interactúa constantemente con el área de recepción.
+                Es fundamental atender sus solicitudes, coordinar con otros departamentos y garantizar su comodidad.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <h3>4. Salida (Check-Out)</h3>
+            <p>
+                En esta última etapa se verifica el estado de cuenta del huésped, se realiza el pago y se despide
+                cordialmente.
+                Una despedida amable fortalece la relación con el cliente y fomenta su regreso.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Hotel Mar Azul - Recepción</p>
+    </footer>
+
+
+    <script>
+        // Detecta scroll y cambia estilo del navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>

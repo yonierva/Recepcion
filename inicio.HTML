@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">Recepción</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="fundamentos.html">Fundamentos</a></li>
+                <li><a href="ciclo.html">El Ciclo</a></li>
+                <li><a href="#">Tecnologías</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>El Corazón Estratégico del Servicio</h1>
+            <p>Descubre la esencia de la recepción hotelera y su papel vital en la experiencia del huésped.</p>
+        </div>
+    </section>
+
+    <section class="info">
+        <h2>El Rol del Recepcionista</h2>
+        <p>
+            La recepción no es solo un mostrador; es el centro de coordinación y el primer contacto del huésped con el
+            establecimiento.
+            El departamento de recepción se encarga de gestionar todo el ciclo de la experiencia del cliente, desde la
+            reserva hasta su salida.
+        </p>
+        <p class="quote">
+            “Su misión va más allá del simple Check-in y Check-out.”
+        </p>
+    </section>
+    <footer>
+        <p>© 2025 Hotel Mar Azul - Recepción</p>
+    </footer>
+
+
+    <script>
+        // Detecta scroll y cambia estilo del navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>

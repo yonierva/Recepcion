@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepción</title>
+    <link rel="stylesheet" href="css/fundamentos.css">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">Recepción</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="inicio.HTML">Home</a></li>
+                <li><a href="#" class="active">Fundamentos</a></li>
+                <li><a href="ciclo.html">El Ciclo</a></li>
+                <li><a href="#">Tecnologías</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Recursos</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1>Fundamentos front office</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa, quasi ipsa libero corrupti
+                deleniti impedit dicta error, deserunt accusantium quisquam pariatur a minima doloremque excepturi quis
+                beatae illum debitis!</p>
+        </div>
+    </section>
+
+    <section class="info">
+        <h2>Fundamentos de la Recepción Hotelera</h2>
+        <p>
+            La recepción es el corazón operativo de cualquier establecimiento de hospedaje. Es el punto de encuentro
+            entre el huésped y la organización, donde se proyecta la primera impresión y se sella la última. Su función
+            va mucho más allá del simple registro de entradas y salidas; representa el eje de comunicación, coordinación
+            y atención personalizada dentro del hotel.
+        </p>
+        <p>
+            Entre sus principales responsabilidades se encuentran la gestión de reservas, el registro de huéspedes, la
+            atención a requerimientos especiales, la coordinación con otros departamentos como ama de llaves o
+            mantenimiento, y el control administrativo de habitaciones y cuentas.
+        </p>
+        <p>
+            En la actualidad, la recepción combina habilidades humanas y tecnológicas. El dominio de los sistemas de
+            gestión hotelera (PMS), la comunicación efectiva y el servicio al cliente son pilares esenciales para
+            garantizar una experiencia positiva y memorable.
+        </p>
+        <p class="quote">
+            “Una recepción eficiente no solo gestiona huéspedes, sino que crea experiencias que dejan huella.”
+        </p>
+    </section>
+    <footer>
+        <p>© 2025 Hotel Mar Azul - Recepción</p>
+    </footer>
+
+
+    <script>
+        // Detecta scroll y cambia estilo del navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const toggle = document.getElementById("menu-toggle");
+        const nav = document.querySelector("nav");
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>
