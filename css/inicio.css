@@ -188,6 +188,15 @@ footer {
     .info {
         padding: 60px 15%;
     }
+
+    .galeria {
+        padding: 40px 5%;
+        gap: 15px;
+    }
+
+    .galeria img {
+        height: 200px;
+    }
 }
 
 @media (max-width: 768px) {
